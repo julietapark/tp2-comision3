@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap');
+
+body {
+    background-color: white;
+    font-family: "Open Sans", sans-serif;
+    border: 4px dashed rgb(57, 57, 245);
+
+}
+
+
+
+#animacion {
+    width: 200px;
+    height: 200px;
+    background-image: url(../imagenes/archivodeshu.png);
+    background-position: 100px;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: 20px;
+    animation: miAnimacion 5s infinite;
+    position: absolute;
+    transform-origin: 50% 50%;
+
+}
+
+@keyframes miAnimacion {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    margin: auto;
+}
+
+
+p {
+    text-align: center;
+    text-decoration: overline;
+    font-size: 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    width: 135px;
+    height: 30px;
+    display: block;
+    padding: 10px;
+    margin: 10px auto;
+    line-height: 30px;
+    border-radius: 10px;
+    transition: all 5ms;
+}
+
+header a:hover {
+    background-color: white;
+    color: black;
+    border: 3px dashed rgb(57, 57, 245);
+}
+
+main {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+div {
+
+    width: 45%;
+    margin-bottom: 20px;
+
+}
+
+
+#video {
+    width: 80%;
+    margin: 10px auto;
+}
+
+img,
+video {
+    width: 100%;
+}
+
+footer {
+    width: 1200px;
+    height: 50px;
+    margin: auto;
+    margin-bottom: 20px;
+    background-image: url(../imagenes/archivodeshu.png);
+    background-size: contain;
+}
